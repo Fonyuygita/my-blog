@@ -25,52 +25,90 @@ a{
     padding-right: 50px;
     margin: auto;
     min-height: 100vh;
-    background-color: rebeccapurple;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-@media (max-width:1536px){
-    .container{
-        max-width:136px;
-    }
-}
-
-@media (max-width:1366px){
-    .container{
-        max-width: 1280px;
-    }
-}
-
-@media (max-width:1280px){
-    .container{
-        max-width: 1024px;
-    }
-}
 
 
-@media (max-width:1536px){
-    .container{
-        max-width: 1366px;
-    }
-}
+/* FOOTER START */
+  
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    font-size: 14px;
+  }
+  
+  .social {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* FOOTER END */
+  
+  /* LIST START */
+  
 
-@media (max-width:1024px){
-    .container{
-        max-width: 768px;
-        padding-left: 10px;
-        padding-right: 10px;
+@media (max-width: 1536px) {
+    .container {
+      max-width: 1366px;
     }
-}
-
-@media (max-width:768px){
-    .container{
-        max-width: 640px;
+  }
+  @media (max-width: 1366px) {
+    .container {
+      max-width: 1280px;
     }
-}
-
-@media (max-width:640pxpx){
-    .container{
-        max-width: 475px;
+  }
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
     }
-}
+  }
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .singleHeadImg {
+      display: none;
+    }
+  
+    .singleBottom {
+      flex-direction: column-reverse;
+    }
+  
+    .rightBarImg {
+      display: none;
+    }
+  
+    .rightBarImgHr {
+      display: block;
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
+    .links {
+      font-size: 14px;
+    }
+  
+    .listItemImage {
+      display: none;
+    }
+  
+    .searchButton span{
+      display: none;
+    }
+  }
+  @media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+  }

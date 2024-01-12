@@ -1,5 +1,25 @@
+<!-- <link rel="stylesheet" href="/styles/list.css"> -->
 {{define "main"}}
-<div class="list">List page
-    <a href="#">welcome a tag</a>
+<div class="list">
+    {{range .Paginator.Pages}}
+    <div class="listItem">
+
+        <img src={{ .Params.image}} alt={{.Title}} class="listItemImage" loading="lazy">
+        <div class="listItemText">
+            <h1 class="listItemTitle">
+                <a href="">{{.Title}}</a>
+            </h1>
+            <p class="listItemDesc">{{.Params.description}}</p>
+            <div class="listItemDetail">
+                <img src={{.Params.avatar}} alt="" loading="lazy">
+                <span></span>
+                <time>{{.Date}}</time>
+            </div>
+        </div>
+        <!-- our list goes in here -->
+    </div>
+
+    {{end}}
+   
 </div>
 {{end}}
